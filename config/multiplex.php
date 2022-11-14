@@ -12,6 +12,11 @@ return [
      * located in `database/migrations`.
      */
     'migrations' => true,
+    
+    /**
+     * Connection name to use.
+     */
+    'connection' => 'default',
 
     /**
      * When storing models having the `HasMeta` trait you may define that all meta
