@@ -88,6 +88,14 @@ class Meta extends Model
     protected $cachedValue;
 
     protected ?string $forceType = null;
+    
+    /**
+     * {@inheritDoc}
+     */
+    public function getConnectionName()
+    {
+        return config('multiplex.connection', 'default');
+    }
 
     public static function boot()
     {
